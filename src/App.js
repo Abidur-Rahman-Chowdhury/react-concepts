@@ -1,11 +1,14 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable prettier/prettier */
 import Clock from './components/Clock';
+import ClockList from './components/ClockList';
 
 function App() {
-    console.log('app component rendered');
+    const quantities = [1, 2, 3];
     return (
         <div>
-            <Clock />
+            <ClockList quantities={quantities}/>
         </div>
     );
 }
